@@ -219,6 +219,6 @@ Free to use in personal and commercial projects.
 For the full-featured version, visit:  
 **[Automatic Tutorial Maker on Unity Asset Store](https://u3d.as/3tsL)**
 
-[![Watch the demo](https://img.youtube.com/vi/8RE4LOaLAI4/maxresdefault.jpg)](https://youtu.be/8RE4LOaLAI4)
+[![YouTube](https://img.shields.io/badge/YouTube-Watch_Demo-red?style=for-the-badge&logo=youtube)](https://youtu.be/8RE4LOaLAI4)
 
 [FEATURES](#features) | [QUICK START](#quick-start) | [CSV FORMAT](#csv-format) | [FONT MANAGEMENT](#font-management) | [API REFERENCE](#api-reference) | [EXAMPLE SCENE](#example-scene) | [NOTES](#notes) | [LICENSE](#license) | [SUPPORT](#support)
