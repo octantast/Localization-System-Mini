@@ -1,4 +1,5 @@
 # Localization System Mini for Unity
+[FEATURES](#features) | [QUICK START](#quick-start) | [CSV FORMAT](#csv-format) | [FONT MANAGEMENT](#font-management) | [API REFERENCE](#api-reference) | [EXAMPLE SCENE](#example-scene) | [NOTES](#notes) | [LICENSE](#license) | [SUPPORT](#support)
 
 A simple CSV-based text localization system for Unity projects using TextMeshPro. Features automatic font switching, dynamic placeholders, optimized with caching.
 
@@ -211,3 +212,5 @@ Free to use in personal and commercial projects.
 
 For the full-featured version with advanced tutorial systems, visit:  
 **[Automatic Tutorial Maker on Unity Asset Store](https://u3d.as/3tsL)**
+
+[FEATURES](#features) | [QUICK START](#quick-start) | [CSV FORMAT](#csv-format) | [FONT MANAGEMENT](#font-management) | [API REFERENCE](#api-reference) | [EXAMPLE SCENE](#example-scene) | [NOTES](#notes) | [LICENSE](#license) | [SUPPORT](#support)
