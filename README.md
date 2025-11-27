@@ -62,7 +62,15 @@ public class GameManager : MonoBehaviour
 }
 ```
 
-### 3. Use in Code
+## 3. Connect to UI Buttons
+
+In the Inspector → Button component → **OnClick()**:
+   - Click **+** to add event
+   - Drag **InputData** scriptable object into the object field
+   - Select **InputStringsScriptableObject → ChangeLanguage (string)**
+   - Enter language name in the text field: `English`, `Japanese`, `Ukrainian`, etc.
+
+### 4. Use in Code
 
 > **Row Indexing:** Visual editors (Excel, Google Sheets) start from row 1, but code uses 0-based indexing. When specifying a row number, subtract 1 from what you see in the editor (e.g., row 2 in Excel = index 1 in code). Alternatively, use keys instead of row numbers. This is more reliable and allows you to swap table rows.
 
