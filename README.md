@@ -62,7 +62,7 @@ public class GameManager : MonoBehaviour
 }
 ```
 
-## 3. Connect to UI Buttons
+### 3. Connect to UI Buttons
 
 In the Inspector → Button component → **OnClick()**:
    - Click **+** to add event
