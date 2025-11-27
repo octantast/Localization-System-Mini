@@ -6,9 +6,9 @@ A simple CSV-based text localization system for Unity projects using TextMeshPro
 > **Source:** This is a simplified version of the localization system from [Automatic Tutorial Maker](https://u3d.as/3tsL) asset.
 
 <p align="center">
-  <img width="33%" alt="CSV Table Import" src="https://github.com/user-attachments/assets/0001a6ec-6736-460a-b35c-de63d1625ee5" />
-  <img width="33%" alt="ScriptableObject Setup" src="https://github.com/user-attachments/assets/e67125dc-90b6-472c-be7d-437ecc495f95" />  
-  <img width="33%" alt="Method Calls Demo" src="https://github.com/user-attachments/assets/669d0aff-1462-4d37-9a2e-8d83727a6399" />
+  <img width="30%" alt="CSV Table Import" src="https://github.com/user-attachments/assets/0001a6ec-6736-460a-b35c-de63d1625ee5" />
+  <img width="30%" alt="ScriptableObject Setup" src="https://github.com/user-attachments/assets/e67125dc-90b6-472c-be7d-437ecc495f95" />  
+  <img width="30%" alt="Method Calls Demo" src="https://github.com/user-attachments/assets/669d0aff-1462-4d37-9a2e-8d83727a6399" />
 </p>
 
 ## Features
