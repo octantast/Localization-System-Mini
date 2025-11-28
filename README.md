@@ -181,6 +181,8 @@ The system automatically switches fonts when language changes.
 
 Open `DemoScene` to see all features in action.
 
+<img width="1920" height="968" alt="Calls" src="https://github.com/user-attachments/assets/feb99d28-0808-4e02-a202-01e29587cefd" />
+
 ### Language Switching
 - Flag buttons to switch between languages
 - Automatic font switching for CJK languages
