@@ -230,8 +230,9 @@ Free to use in personal and commercial projects.
 
 ## Support
 
-For the full-featured version, visit:  
-**[Automatic Tutorial Maker on Unity Asset Store](https://u3d.as/3tsL)**
+For the full-featured version, visit: **[Automatic Tutorial Maker on Unity Asset Store](https://u3d.as/3tsL)**
+
+This system is used for localizing text tooltips, can additionally find a value by the closest match (without relying on a row number or key), and can export auto-generated or manually created texts to CSV from a Scriptable Object. The storage contains all built-in tooltips as well as additional texts created across all scenes and tutorial steps in the Unity project.
 
 [![YouTube](https://img.shields.io/badge/YouTube-Watch_Demo-red?style=for-the-badge&logo=youtube)](https://youtu.be/8RE4LOaLAI4)
 
