@@ -390,6 +390,53 @@ namespace LocalizationSystemMini
             // Cache for future translations
             AddOrUpdateDynamicTextPair(textToFill, tableRow, values, formattedText);
         }
+
+        // Method for replacing placeholders by key (string) instead of string index
+        public string ReplacePlaceholdersByKey(string key, params object[] values)
+        {
+            if (string.IsNullOrEmpty(key))
+            {
+                Debug.LogWarning("[Localization System Mini] Key cannot be null or empty!");
+                return "";
+            }
+
+            int rowIndex = FindRowIndexByKey(key);
+
+            if (rowIndex < 0)
+            {
+                Debug.LogWarning($"[Localization System Mini] Key '{key}' not found in the first column!");
+                return "";
+            }
+
+            return ReplacePlaceholders(rowIndex, values);
+        }
+
+        // Fills the TextMeshPro component with text with dynamic placeholders using a key instead of an index
+        public void FillTextObjectWithPlaceholdersByKey(string key, TMP_Text textToFill, params object[] values)
+        {
+            if (textToFill == null)
+            {
+                Debug.LogWarning("[Localization System Mini] TextToFill cannot be null!");
+                return;
+            }
+
+            if (string.IsNullOrEmpty(key))
+            {
+                Debug.LogWarning("[Localization System Mini] Key cannot be null or empty!");
+                return;
+            }
+
+            int rowIndex = FindRowIndexByKey(key);
+
+            if (rowIndex < 0)
+            {
+                Debug.LogWarning($"[Localization System Mini] Key '{key}' not found in the first column!");
+                return;
+            }
+
+            FillTextObjectWithPlaceholders(rowIndex, textToFill, values);
+        }
+
         #endregion
 
         #region Localization Helpers
