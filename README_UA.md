@@ -229,8 +229,9 @@ textStrings.ChangeLanguage("Ukrainian");
 
 ## Підтримка
 
-Для повнофункціональної версії чекніть:  
-**[Automatic Tutorial Maker в Unity Asset Store](https://u3d.as/3tsL)**
+Для повнофункціональної версії чекніть: **[Automatic Tutorial Maker в Unity Asset Store](https://u3d.as/3tsL)**
+
+Ця система використовується для локалізації текстових підказок, додатково може знаходити значення за найближчим співпадінням (без прив`язки до номера чи ключа рядка) та експортувати авто-згенеровані або вручну створені тексти у CSV зі Scriptable Object. Сховище містить усі вбудовані підказки, а також додаткові тексти, створені в усіх сценах і навчальних кроках Unity-проєкту.
 
 [![YouTube](https://img.shields.io/badge/YouTube-Дивитись_Демо-red?style=for-the-badge&logo=youtube)](https://youtu.be/8RE4LOaLAI4)
 
