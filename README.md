@@ -139,11 +139,11 @@ textStrings.ChangeLanguage("Ukrainian");
 > 
 > ✅ **Correct:**  
 > EN: `"Player {name} has {score} coins"` → "Player John has 100 coins"  
-> CN: `"{name}有{score}金币"` → "John有100金币"  
+> UA: `"У гравця {name} є {score} монет"` → "У гравця John є 100 монет"  
 > *(Same order: {name} first, {score} second)*
 > 
 > ❌ **Wrong:**  
-> CN: `"{score}金币属于{name}"` → "John金币属于100" *(nonsense!)*  
+> UA: `"{score} монет у гравця {name}"` → "John монет у гравця 100"
 > *(Reversed order: system replaces {score} with "John", {name} with 100)*
 
 ## Font Management
