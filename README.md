@@ -77,6 +77,8 @@ In the Inspector → Button component → **OnClick()**:
 **Static Mode** – caches text objects, auto-updates on language change, handles font switching  
 *Call once: on Start, or when spawning text objects*
 ```csharp
+void Start()
+{
 // Simple text
 textStrings.FillTextObject(2, textComponent);
 
@@ -85,6 +87,7 @@ textStrings.FillTextObjectByKey("settings_key", textComponent);
 
 // With placeholders (requires manual re-call if variables change)
 textStrings.FillTextObjectWithPlaceholders(2, textComponent, userName, score);
+}
 ```
 
 **Dynamic Mode** – reads on-demand, no font switching  
