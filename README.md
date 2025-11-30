@@ -33,6 +33,9 @@ A simple CSV-based text localization system for Unity projects using TextMeshPro
   - **Static** – Cache text objects, auto-update on language change, including font switching (efficient for menus/UI)
   - **Dynamic** – Read strings per-frame, no built-in font switching (for scores/timers, cached lookups)
 
+<img width="1280" height="720" alt="Tooltip Localization System Unity" src="https://github.com/user-attachments/assets/8e773fe3-fff2-4990-a463-4fe290d7c7f1" />
+
+
 ## Quick Start
 
 ### 1. Setup
@@ -177,6 +180,8 @@ The system automatically switches fonts when language changes.
 ### Properties
 
 `_currentLanguageString` – Current language as string. Track this to detect language changes in external scripts (e.g., `if (language != textStrings._currentLanguageString)`).
+
+<img width="1323" height="845" alt="Localization System Mini code" src="https://github.com/user-attachments/assets/411a6384-25c9-4385-9e16-7b6e5bd7f91c" />
 
 ## Example Scene
 
