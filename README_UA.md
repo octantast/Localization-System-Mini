@@ -1,15 +1,15 @@
 # Localization System Mini для Unity
 [МОЖЛИВОСТІ](#можливості) | [ШВИДКИЙ СТАРТ](#швидкий-старт) | [ФОРМАТ CSV](#формат-csv) | [ШРИФТИ](#керування-шрифтами) | [API](#довідник-api) | [ДЕМО СЦЕНА](#приклад-сцени) | [ПРИМІТКИ](#примітки) | [ЛІЦЕНЗІЯ](#ліцензія) | [ПІДТРИМКА](#підтримка)
 
-Проста система локалізації тексту на основі CSV для проєктів Unity з використанням TextMeshPro. Читає CSV-файл, повертає рядки, змінює шрифти та кешує все для оптимізації. Створено для соло-розробників та інді-команд, які хочуть тримати текстові значення поза скриптами й керувати перекладами через зовнішні редактори.
-
-> **Джерело:** Це спрощена версія системи локалізації з асету [Automatic Tutorial Maker](https://u3d.as/3tsL).
-
 <p align="center">
   <img width="30%" alt="Імпорт CSV таблиці" src="https://github.com/user-attachments/assets/0001a6ec-6736-460a-b35c-de63d1625ee5" />
   <img width="30%" alt="Налаштування ScriptableObject" src="https://github.com/user-attachments/assets/e67125dc-90b6-472c-be7d-437ecc495f95" />  
   <img width="30%" alt="Демонстрація викликів методів" src="https://github.com/user-attachments/assets/669d0aff-1462-4d37-9a2e-8d83727a6399" />
 </p>
+
+Проста система локалізації тексту на основі CSV для проєктів Unity з використанням TextMeshPro. Читає CSV-файл, повертає рядки, змінює шрифти та кешує все для оптимізації. Створено для соло-розробників та інді-команд, які хочуть тримати текстові значення поза скриптами й керувати перекладами через зовнішні редактори.
+
+> **Джерело:** Це спрощена версія системи локалізації з асету [Automatic Tutorial Maker](https://u3d.as/3tsL).
 
 ## Можливості
 
@@ -87,6 +87,8 @@ textStrings.FillTextObjectByKey("settings_key", textComponent);
 
 // З плейсхолдерами (потребує повторного виклику для оновлення змінних)
 textStrings.FillTextObjectWithPlaceholders(2, textComponent, userName, score);
+
+textStrings.FillTextObjectWithPlaceholdersByKey("row_key", textComponent, userName, score);
 }
 ```
 
@@ -103,7 +105,9 @@ void Update()
     
     // З плейсхолдерами
     textComponent.text = textStrings.ReplacePlaceholders(3, playerName, level);
-    
+
+    textComponent.text = textStrings.ReplacePlaceholdersByKey("row_key", playerName, level);
+
     // Ручне оновлення шрифту (викликайте один раз, за потреби)
     textComponent.font = textStrings.GetCurrentFont();
 }
@@ -171,6 +175,8 @@ textStrings.ChangeLanguage("Ukrainian");
 | `FillTextObject(int row, TMP_Text)` | Кешувати текстовий об'єкт | Статичний UI |
 | `ReplacePlaceholders(int row, params object[])` | Отримати текст зі змінними | Динамічний зі змінними |
 | `FillTextObjectWithPlaceholders(int row, TMP_Text, params object[])` | Кешувати текст зі змінними | Статичний зі змінними |
+| `ReplacePlaceholdersByKey(string key, params object[])` | Отримати текст зі змінними | Динамічний зі змінними |
+| `FillTextObjectWithPlaceholdersByKey(string key, TMP_Text textToFill, params object[])` | Кешувати текст зі змінними | Статичний зі змінними |
 | `GetCurrentFont()` | Отримати шрифт поточної мови | Ручне керування шрифтом |
 
 ### Властивості
