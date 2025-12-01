@@ -91,6 +91,8 @@ textStrings.FillTextObjectByKey("settings_key", textComponent);
 
 // With placeholders (requires manual re-call if variables change)
 textStrings.FillTextObjectWithPlaceholders(2, textComponent, userName, score);
+
+textStrings.FillTextObjectWithPlaceholdersByKey("row_key", textComponent, userName, score);
 }
 ```
 
@@ -107,6 +109,8 @@ void Update()
     
     // With placeholders
     textComponent.text = textStrings.ReplacePlaceholders(3, playerName, level);
+
+    textComponent.text = textStrings.ReplacePlaceholdersByKey("row_key", playerName, level);
     
     // Manual font update (call once, if needed)
     textComponent.font = textStrings.GetCurrentFont();
@@ -175,6 +179,8 @@ The system automatically switches fonts when language changes.
 | `FillTextObject(int row, TMP_Text)` | Cache text object | Static UI |
 | `ReplacePlaceholders(int row, params object[])` | Get text with variables | Dynamic with variables |
 | `FillTextObjectWithPlaceholders(int row, TMP_Text, params object[])` | Cache text with variables | Static with variables |
+| `ReplacePlaceholdersByKey(string key, params object[])` | Get text with variables | Dynamic with variables |
+| `FillTextObjectWithPlaceholdersByKey(string key, TMP_Text textToFill, params object[])` | Cache text with variables | Static with variables |
 | `GetCurrentFont()` | Get current language font | Manual font management |
 
 ### Properties
