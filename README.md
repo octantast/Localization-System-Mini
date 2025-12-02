@@ -35,7 +35,6 @@ A simple CSV-based text localization system for Unity projects using TextMeshPro
 
 <img width="1280" height="720" alt="Tooltip Localization System Unity" src="https://github.com/user-attachments/assets/8e773fe3-fff2-4990-a463-4fe290d7c7f1" />
 
-
 ## Quick Start
 
 ### 1. Setup
