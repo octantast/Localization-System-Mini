@@ -33,6 +33,8 @@
   - **Статичний** – кешує текстові об'єкти, автоматично оновлює при зміні мови, включаючи зміну шрифту (ефективно для меню/UI)
   - **Динамічний** – просто зчитує значення, без вбудованої зміни шрифту (для рахунків/таймерів, кешовані пошуки)
 
+<img width="1280" height="720" alt="Tooltip Localization System Unity" src="https://github.com/user-attachments/assets/8e773fe3-fff2-4990-a463-4fe290d7c7f1" />
+
 ## Швидкий старт
 
 ### 1. Налаштування
@@ -183,6 +185,8 @@ textStrings.ChangeLanguage("Ukrainian");
 ### Властивості
 
 `_currentLanguageString` – Поточна мова як string. Відстежуйте це для виявлення змін мови в зовнішніх скриптах (наприклад, `if (language != textStrings._currentLanguageString)`).
+
+<img width="1323" height="845" alt="Localization System Mini code" src="https://github.com/user-attachments/assets/411a6384-25c9-4385-9e16-7b6e5bd7f91c" />
 
 ## Приклад сцени
 
