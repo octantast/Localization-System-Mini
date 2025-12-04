@@ -248,5 +248,6 @@ This system is used for localizing text tooltips, can additionally find a value 
 
 <img width="1920" height="971" alt="ATM_full" src="https://github.com/user-attachments/assets/e8a628ed-81a9-4aeb-965d-dc6e36e8db07" />
 
+P. S. There`s already a solution based on CSV: Localization Package from Unity, which includes most of the possible features. The example below shows a simpler version for indie projects, with some unique advantages. For instance, it can cache a pair of TMP_Text and its string, so that when a translation is updated, all pairs are refreshed automatically, including the font. It supports languages with any name (you can add a column like “Elvish” and reference it by “Elvish”). And it uses only one ScriptableObject as a "middleman", accessible from anywhere, so you don`t need to deal with a bunch of components.
 
 [FEATURES](#features) | [QUICK START](#quick-start) | [CSV FORMAT](#csv-format) | [FONTS](#font-management) | [API](#api-reference) | [DEMO SCENE](#example-scene) | [NOTES](#notes) | [LICENSE](#license) | [SUPPORT](#support)
