@@ -250,4 +250,10 @@ This system is used for localizing text tooltips, can additionally find a value 
 
 P.S. There’s already a solution based on CSV: Localization Package from Unity, which includes most of the possible features. This system shows a simpler version for indie projects, with some unique advantages. For instance, it can cache a pair of TMP_Text and its string, so that when a translation is updated, all pairs are refreshed automatically, including the font. It supports languages with any name (you can add a column like “Elvish” and reference it by “Elvish”). And it uses only one ScriptableObject as a "middleman", accessible from anywhere, so you don’t need to deal with a bunch of components.
 
+Dev's website: https://www.octantastudio.com/
+
+Gmail: octantastudio@gmail.com 
+
+Discord: https://discord.gg/6SPxKpFZFC
+
 [FEATURES](#features) | [QUICK START](#quick-start) | [CSV FORMAT](#csv-format) | [FONTS](#font-management) | [API](#api-reference) | [DEMO SCENE](#example-scene) | [NOTES](#notes) | [LICENSE](#license) | [SUPPORT](#support)
