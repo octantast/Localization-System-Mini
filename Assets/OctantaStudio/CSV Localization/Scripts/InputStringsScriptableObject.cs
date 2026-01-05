@@ -801,6 +801,38 @@ namespace LocalizationSystemMini
         }
         #endregion
 
+        #region Parameter Reading Helpers
+
+        public bool HaveParametersChanged(object[] currentParameters, object[] cachedParameterValues)
+        {
+            if (cachedParameterValues == null || currentParameters == null)
+                return true;
+
+            if (cachedParameterValues.Length != currentParameters.Length)
+                return true;
+
+            for (int i = 0; i < cachedParameterValues.Length; i++)
+            {
+                if (!AreValuesEqual(cachedParameterValues[i], currentParameters[i]))
+                    return true;
+            }
+
+            return false;
+        }
+
+        private bool AreValuesEqual(object a, object b)
+        {
+            if (a == null || b == null)
+                return a == b;
+
+            if (a.GetType().IsValueType || a is string)
+                return a.Equals(b);
+
+            return object.ReferenceEquals(a, b);
+        }
+
+        #endregion
+
         #region CSV Parsing And Optimization
 
         // Caches CSV file lines for faster access

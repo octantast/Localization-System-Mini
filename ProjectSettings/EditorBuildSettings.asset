@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/OctantaStudio/TouchEffectSystem/Scenes/DemoScene.unity
     guid: 0b1d66bf51b14ec4dae502a2c4027981
   m_configObjects:
