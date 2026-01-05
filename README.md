@@ -1,6 +1,6 @@
 🌐 [English](README.md) | [Українська](README_UA.md)
 # Localization System Mini for Unity
-[FEATURES](#features) | [QUICK START](#quick-start) | [CSV FORMAT](#csv-format) | [FONTS](#font-management) | [API](#api-reference) | [DEMO SCENE](#example-scene) | [NOTES](#notes) | [LICENSE](#license) | [SUPPORT](#support)
+[FEATURES](#features) | [QUICK START](#quick-start) | [TOOLTIP](#localized-tooltip-component) | [CSV FORMAT](#csv-format) | [FONTS](#font-management) | [API](#api-reference) | [DEMO SCENE](#example-scene) | [NOTES](#notes) | [LICENSE](#license) | [SUPPORT](#support)
 
 <p align="center">
   <img width="30%" alt="CSV Table Import" src="https://github.com/user-attachments/assets/0001a6ec-6736-460a-b35c-de63d1625ee5" />
@@ -124,6 +124,30 @@ textStrings.ChangeLanguage(InputStringsScriptableObject.Language.Japanese);
 // By string (recommended for custom languages)
 textStrings.ChangeLanguage("Ukrainian");
 ```
+
+## Localized Tooltip Component
+
+A component for automatic text localization directly on scene objects without writing code.
+
+### Setup
+
+1. Add **LocalizedTooltip** component to a GameObject with TextMeshPro
+2. Assign **InputData** to the Input Text Settings field
+3. Enter **Connected Table Key** (row key from CSV)
+4. Text automatically updates on Start and language change
+
+### Dynamic Parameters
+
+For text with variables, use **Parameter Selector**:
+
+1. Click **+** in the Dynamic Parameters list
+2. Select **Target Object** (GameObject with the needed component)
+3. Select **Component** from dropdown
+4. Select **Field/Property** to display
+
+**Parameter Updates:**
+- Automatic: Uncomment `Update()` method in LocalizedTooltip.cs
+- Manual: Call `FillTextObject()` after value changes
 
 ## CSV Format
 
@@ -256,4 +280,4 @@ Gmail: octantastudio@gmail.com
 
 Discord: https://discord.gg/6SPxKpFZFC
 
-[FEATURES](#features) | [QUICK START](#quick-start) | [CSV FORMAT](#csv-format) | [FONTS](#font-management) | [API](#api-reference) | [DEMO SCENE](#example-scene) | [NOTES](#notes) | [LICENSE](#license) | [SUPPORT](#support)
+[FEATURES](#features) | [QUICK START](#quick-start) | [TOOLTIP](#localized-tooltip-component) | [CSV FORMAT](#csv-format) | [FONTS](#font-management) | [API](#api-reference) | [DEMO SCENE](#example-scene) | [NOTES](#notes) | [LICENSE](#license) | [SUPPORT](#support)
